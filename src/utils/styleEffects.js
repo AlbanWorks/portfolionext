@@ -29,7 +29,7 @@ const defLight = {
     '--bgColorLight': '#fff',
     '--bgImage':'none',
     '--gradient': 'linear-gradient(to right, #3590e6 , #409cf1)',
-    '--border': 'none',
+    '--border': '1px solid #3590e6 ',
     '--boxShadow': '0 4px 7px rgba(0, 0, 0, 0.1)',
     '--boxShadowStrong': 'none'
 }

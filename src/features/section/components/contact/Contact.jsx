@@ -20,16 +20,16 @@ const Contact = ({language}) => {
     >
         <form 
             action="https://formsubmit.co/santiagolizardomail@gmail.com" 
-            method="POST" >
-      
-        <span className={st.span}>{language === 'es' ? 'mensaje' : 'message' }</span>
-        <textarea className={st.textarea} cols="30" rows="10"></textarea>
-        <span className={st.span}>{language === 'es' ? 'correo' : 'e-mail' }</span>
-        <input className={st.email} type="text"/>
-        <motion.div type="submit" className={st.sendButtonContainer} whileTap={{scale: 0.95}} whileHover={{scale: 1.01}}>
-            <DefButton title={language === 'es' ? 'Enviar' : 'Send' } click={()=>{}}/>
-        </motion.div>
-        </form>
+            method="POST" 
+        >
+            <label className={st.span}>{language === 'es' ? 'mensaje' : 'message' }</label>
+            <textarea className={st.textarea} cols="30" rows="10"></textarea>
+            <label className={st.span}>{language === 'es' ? 'correo' : 'e-mail' }</label>
+            <input className={st.email} type="text"/>
+            <motion.div type="submit" className={st.sendButtonContainer} whileTap={{scale: 0.95}} whileHover={{scale: 1.01}}>
+                <DefButton title={language === 'es' ? 'Enviar' : 'Send' } click={()=>{}}/>
+            </motion.div>
+            </form>
         <div className={st.social}>
             <motion.button 
                 className={st.iconButton} 

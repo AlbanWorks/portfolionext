@@ -13,6 +13,7 @@
     font-size: 18px;
     margin: 30px 10px;
     text-align: center;
+    white-space: pre-line;
 }
 .iconButton{
     border:none;

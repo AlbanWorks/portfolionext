@@ -17,6 +17,7 @@
     padding: 10px;
     box-sizing: border-box;
     border: var(--border);
+    resize: none;
 }
 .span{
     font-size: 14px;
