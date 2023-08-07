@@ -1,3 +1,6 @@
+import {Open_Sans } from 'next/font/google'
+const os = Open_Sans({ subsets: ['latin'] })
+
 const defDark = {
     '--color': '#207DD2',
     '--font': 'font-family: "Comic Sans MS", "Comic Sans", cursive',
@@ -49,7 +52,7 @@ const nineties = {
 }
 const neobrutalism = {
     '--color': '#AAC7FF',
-    '--font': "'Open Sans', sans-serif",
+    '--font': os,
     '--fontColor': '#040200',
     '--fontColorAlter': '#040200',
     '--borderRadius': '10px',

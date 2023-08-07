@@ -27,10 +27,6 @@ export default function Home() {
         <Header selectedStyle = {styleName}/>
         <Options probe ={(state)=>LightModeHandler(state)}  setLanguage={(lang)=>setLanguage(lang)}/>
         <Section setEffect={(effectName)=>setEffect(effectName)} language={language}/>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-        </style>
     </main>
   )
 }

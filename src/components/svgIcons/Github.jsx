@@ -3,7 +3,7 @@ import React from 'react'
 const Github = ({height, width, color}) => {
   return (
     <svg 
-    aria-hidden="true"  
+    ariaHidden="true"  
     height={width} 
     version="1.1" 
     viewBox="0 0 16 16" 
