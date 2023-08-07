@@ -1,0 +1,29 @@
+.container{
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    color: var(--fontColor);
+}
+.optionContainer{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    flex-grow: 1;
+    background-color: var(--bgColorLight);
+    border-radius: var(--borderRadius);
+    box-shadow: var(--boxShadow) ;
+    border: var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    align-self: flex-start;
+    margin: 15px 0;
+    font-size: 20px;
+    text-shadow: var(--boxShadowStrong);
+}
