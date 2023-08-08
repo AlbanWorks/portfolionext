@@ -18,7 +18,6 @@ const project = ({data, language}) => {
         variants={variants}
         animate={isOpen ? "open" : "closed"}
         whileHover={{ scale: 1.01}}
-        whileTap={{scale: 0.95,rotate: -2}}
     >
         <div className={st.imgContainer}>
         <ImageWraper img={data.image}/>
