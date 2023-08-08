@@ -26,7 +26,11 @@ const project = ({data, language}) => {
         <div className={st.body}>
             <h5 className={st.title}>{data.title}</h5>
             <p className={st.description}>{language === 'es' ? data.descriptionEs : data.descriptionEn }</p>
-            <a className={st.ancor} href="#">{language === 'es' ? 'Visitar' : 'Visit' }</a>
+            {
+                data.link !== '' ?
+                    <a className={st.ancor} href={data.link}>{language === 'es' ? 'Visitar' : 'Visit' }</a>
+                :null
+            }
         </div>
     </motion.article>
   )

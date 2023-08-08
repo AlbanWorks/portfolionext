@@ -12,9 +12,9 @@ const Section = ({setEffect, language}) => {
    
     const options = [
         {name: 'projects', titleEs:'Proyectos', titleEn:'Projects'},
+        {name: 'aboutme', titleEs:'Sobre Mi', titleEn:'About me'},
         {name: 'effects', titleEs:'Efectos', titleEn:'Effects'},
-        {name: 'contact', titleEs:'Contacto', titleEn:'Contact'},
-        {name: 'aboutme', titleEs:'Sobre Mi', titleEn:'About me'}
+        {name: 'contact', titleEs:'Contacto', titleEn:'Contact'}
     ]
     const [selectedOption, setSelectedOption] = useState(0)
   return (
@@ -34,9 +34,9 @@ const Section = ({setEffect, language}) => {
             </h3>
             {
               selectedOption === 0 ? <Projects  language={language}/>
-              : selectedOption === 1? <Effects setEffect={(effectName)=>setEffect(effectName)}  language={language}/>
-              : selectedOption === 2 ? <Contact  language={language}/>
-              : selectedOption === 3 ? <Aboutme  language={language}/>
+              : selectedOption === 1 ? <Aboutme  language={language}/>
+              : selectedOption === 2? <Effects setEffect={(effectName)=>setEffect(effectName)}  language={language}/>
+              : selectedOption === 3? <Contact  language={language}/>
               :null
             }
         </div>
