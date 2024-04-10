@@ -48,7 +48,7 @@ const Projects = ({language}) => {
             image : "/images/radianer.jpg", 
             descriptionEs: 'Demo de mu videojuego sandbox 2D, explora planetas en este mundo de bloques',
             descriptionEn: 'Demo of my 2D sandbox videogame, explore planets in this blocky world', 
-            link: '#',
+            link: 'https://albantech.vercel.app/',
             techs: ['Next.js', 'Unity', 'C#']
         },
     ]
