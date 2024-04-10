@@ -26,12 +26,6 @@ const Section = ({setEffect, language}) => {
             language={language}
         />
         <div className={st.optionContainer}>
-            <h3 className={st.title}>
-                {
-                    language === 'es' ? options[selectedOption].titleEs
-                    :options[selectedOption].titleEn
-                }
-            </h3>
             {
               selectedOption === 0 ? <Projects  language={language}/>
               : selectedOption === 1 ? <Aboutme  language={language}/>

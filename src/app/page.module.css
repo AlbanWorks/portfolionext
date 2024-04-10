@@ -9,6 +9,12 @@
     font-family: var(--font);
     background-image: var(--bgImage);
     background-color: var(--bgColor);
+    padding:  0;
+}
+@media only screen and (min-width: 800px) {
+    .container{
+       padding:  var(--pagePadding);
+    }
 }
 @media only screen and (min-width: 1200px) {
     .container{

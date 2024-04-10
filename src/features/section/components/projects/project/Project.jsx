@@ -1,40 +1,44 @@
 'use client'
-import React,{useState} from 'react'
+import React from 'react'
 import st from './Project.module.css'
 import ImageWraper from '@/components/imageWraper/ImageWraper'
 import { motion } from "framer-motion";
+import TechnologyLabel from './TechnologyLabel';
 
-const project = ({data, language}) => {
-    const [isOpen, setIsOpen] = useState(false)
-    const variants = {
-        open: {scale: 1, opacity:1, height: "400px", position:'relative'},
-        closed: {scale: 1,opacity:1 ,height: "200px", position:'relative'},
-    }
+const Project = ({data, language}) => {
+
   return (
-    <motion.article 
-        className={st.container} 
-        onClick={()=>setIsOpen(!isOpen)}
-        initial={{ scale: 0.8, opacity:0 }}
-        variants={variants}
-        animate={isOpen ? "open" : "closed"}
-        whileHover={{ scale: 1.01}}
-    >
-        <div className={st.imgContainer}>
-        <ImageWraper img={data.image}/>
-        </div>
-        <div className={st.body}>
-            <h5 className={st.title}>{data.title}</h5>
-            <p className={st.description}>{language === 'es' ? data.descriptionEs : data.descriptionEn }</p>
-            {
-                data.link !== '' ?
-                    <a className={st.ancor} href={data.link}>{language === 'es' ? 'Visitar' : 'Visit' }</a>
-                :null
-            }
-        </div>
-    </motion.article>
+    <div className={st.container}>
+        <motion.a 
+            className={st.anchor} 
+            href={data.link}
+            whileHover={{scale: 1.02}}
+           
+            whileTap={{
+            rotate: 1,
+            borderRadius: "30px"
+            }}
+        >
+            <div className={st.imgContainer}>
+                <ImageWraper img={data.image}/>
+            </div>
+            <div className={st.body}>
+                <h5 className={st.title}>{data.title}</h5>
+                <p className={st.description}>{language === 'es' ? data.descriptionEs : data.descriptionEn }</p>
+                <div className={st.techContainer}>
+                    {
+                        data.techs.map((tech, index)=>
+                            <TechnologyLabel key={index} techName={tech}/>
+                        )
+                    }
+                </div>
+            </div>
+        </motion.a>
+    </div>
   )
+  
 }
 
 
-export default project
-//// <p>{data.description}</p>  <ImageWraper img={data.image}/>
+export default Project
+////  <p className={st.description}>{language === 'es' ? data.descriptionEs : data.descriptionEn }</p>

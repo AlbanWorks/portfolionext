@@ -1,0 +1,31 @@
+.descriptionContainer{
+    box-sizing: border-box;
+    padding: 0 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.paragraph{
+    width: 100%;
+    max-width: 500px;
+    line-height: 1.2em;
+    font-size: 1em;
+    margin: 10px 0;
+}
+.paragraph b{
+    color: var(--fontColorAlter);
+}
+
+@media only screen and (min-width: 800px) {
+    .descriptionContainer{
+        padding: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .paragraph{
+        padding: 0;
+        font-size: 1.15em;
+        max-width: 2000px;
+    }
+}

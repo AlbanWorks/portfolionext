@@ -1,45 +1,67 @@
 .container{
-    height: 200px;
-    width: 100%;
-    border-radius:  calc(var(--borderRadius) + 3px);
-    box-shadow: var(--boxShadow);
-    overflow-y: hidden;
-    margin: 10px 0;
     box-sizing: border-box;
+    width: 100%;
+    border-radius: calc(var(--borderRadius) + 3px);
+    box-shadow: var(--boxShadow);
     display: flex;
     flex-direction: column;
-    max-width: 362px;
-    color: var(--fontColorAlter);
-    border: var(--border);
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--productSize);
+    color: var(--fontColor);
+    outline: var(--border);
+    padding: 15px;
+    background-image: var(--gradient);
+    position: relative;
+    text-decoration: none;
+    margin: 7.5px;
+    height: 380px;
+    overflow: hidden;
+}
+.anchor{
+    color: var(--fontColor);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
 }
 .imgContainer{
     width: 100%;
-    height: 170px;
-    min-height: 170px;
+    height: 65%;
     overflow: hidden;
     box-sizing: border-box;
-    border-radius: var(--borderRadiusTruncatedUp)
+    border-radius: var(--borderRadius)
 }
 .body{
-    background-image: var(--gradient);
     border-radius: var(--borderRadiusTruncatedDown);
-    padding:  0 10px 10px 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     overflow: hidden;
     align-items: center;
     flex-grow: 1;
+    padding-top: 10px;
 }
 .title{
-    margin: 5px;
-    font-size: 16px;
+    margin: 0;
     font-weight: 400;
     align-self: flex-start;
     justify-self: flex-start;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    margin-top: -45px;
+    margin-left: 10px;
+    padding: 3px 7px;
+    border-radius: 3px;
+    font-size: 1.1em;
 }
 .description{
-    margin: 20px 0 20px 0;
-    text-align: center;
+    margin: 0;
 }
 .open{
     background-image: var(--gradient);
@@ -50,14 +72,32 @@
     box-shadow: var(--boxShadow);
     margin: 10px 0;
 }
-
 .ancor{
     font-size: 16px;
     color: var(--fontColorAlter);
 }
+.techContainer{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
 
+}
+.tech{
+    height: 25px;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid var(--colorAlter);
+    border-radius: var(--borderRadius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+.tech span {
+    font-size: 0.7em;
+}
 @media only screen and (min-width: 600px) {
-    .container{
-       margin: 10px;
+    .imgContainer{
+        height: 73%;
     }
 }

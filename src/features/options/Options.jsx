@@ -20,7 +20,7 @@ const Options = ({styleName, setStyleName, setLanguage}) => {
 
   return (
     <div className={st.container}>
-        <button className={st.button} onClick={()=>handleIdiom()} >{english ? 'EN' : 'ES'}</button>
+        <button className={st.button} onClick={()=>handleIdiom()} >{english ? 'ES' : 'EN'}</button>
         {
             styleName === 'defDark' ? 
                 <button className={st.button} onClick={()=>setStyleName('defLight')}>

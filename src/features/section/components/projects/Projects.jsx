@@ -1,51 +1,56 @@
 import React from 'react'
 import st from './Projects.module.css'
 import Project from './project/Project'
-const projects = ({language}) => {
+const Projects = ({language}) => {
     const projectData = [
+        {
+            title: 'MITWallet', 
+            image : "/images/mit.jpg", 
+            descriptionEs: 'Landing + plataforma para MITWallet®, comparte tus datos de contacto con NFC.',
+            descriptionEn: 'Landing + platform to MITWallet®, share your contact data with NFC.', 
+            link: 'https://madeintuc.com',
+            techs: ['Next.js','Firebase']
+        },
+        {
+            title: 'Tucma.tv', 
+            image : "/images/tucma.jpg", 
+            descriptionEs: 'Sitio web para Tucma.tv, importante medio local con cientos de visitas diarias.',
+            descriptionEn: 'Website to Tucma.tv, important local media with hundreds of daily visitors.', 
+            link: 'https://tucma.tv',
+            techs: ['HTML','CSS','Javascript']
+        },
+        {
+            title: 'Mr Vulpini', 
+            image : "/images/vulpini.jpg", 
+            descriptionEs: 'Catálogo para Mr Vulpini, permite gestión de productos y venta por redes sociales',
+            descriptionEn: 'Catálogo para Mr Vulpini, permite gestión de productos y venta por redes sociales', 
+            link: 'https://mrvulpini-albanworks.vercel.app/',
+            techs: ['Next.js','Firebase']
+        },
+        {
+            title: 'Kalist', 
+            image : "/images/kalist.jpg", 
+            descriptionEs: 'Crea listas y notas, mantente productivo y sincronizado con todos tus dispositivos',
+            descriptionEn: 'Crea listas y notas, mantente productivo y sincronizado con todos tus dispositivos', 
+            link: 'https://kalist.vercel.app',
+            techs: ['Next.js','Firebase', 'Framer Motion']
+        },
         {
             title: 'Alban Tech', 
             image : "/images/albantech.jpg", 
-            descriptionEs: 'Proyecto personal, soluciones a medida para pequeñas y medianas empresas, adaptando módulos previamente creados.funciona como una suscripción mensual que incluye mantenimiento, soporte y mejora continua.',
-            descriptionEn: 'Personal project, customized solutions for small and medium-sized companies, adapting previously created modules. It works as a monthly subscription that includes maintenance, support and continuous improvement.', 
-            link: 'https://albantech.vercel.app/'
-        },
-        {
-            title: 'Repara Interno', 
-            image : "/images/repara.jpg", 
-            descriptionEs: 'Aplicación de gestión para un taller. Crea y organiza planillas, contacta con clientes, cotiza trabajos, tiene una lista de tareas y funciona en la nube. Al ser una PWA se puede instalar y utilizar desde el móvil.',
-            descriptionEn: 'Management application for a workshop. Create and organize spreadsheets, contact clients, make budgets, have a to-do list, and it works in the cloud. is a PWA so it can be installed and used in mobile.', 
-            link: ''
-        },
-        {
-            title: 'Punto Repara', 
-            image : "/images/puntoRepara.jpg", 
-            descriptionEs: 'Ampliación de Repara, esta aplicación web puede ser usada por  cualquier persona que desee tener un “punto repara” donde puede recibir electrodomésticos rotos y derivarlos al taller central.',
-            descriptionEn: 'Extension of Repara, this web application can be used by anyone who wishes to have a "Punto Pepara" where they can receive broken machines and refer them to the central workshop.', 
-            link: 'https://punto-repara.vercel.app/'
-        },
-        {
-            title: 'Emisan', 
-            image : "/images/emisan.jpg", 
-            descriptionEs: 'Ejemplo funcional de la plantilla Tiendas, con la que se puede montar un catálogo online gestionado por el cliente que se puede compartir por redes sociales para vender productos y servicios.',
-            descriptionEn: 'Functional example of the Tiendas template, with which you can set up an online catalog managed by the client that can be shared on social networks to sell products and services.', 
-            link: 'https://emisan.vercel.app/'
-        },
-        {
-            title: 'E-Remito', 
-            image : "/images/e-remito.jpg", 
-            descriptionEs: 'Aplicación web para un cliente con múltiples negocios, un punto central donde los empleados pueden reportar los ingresos, egresos y facturas de cada turno y fecha. El cliente gestiona, agrega y elimina negocios y los empleados pueden usar la app desde una PC o celular',
-            descriptionEn: 'Web application for a client with multiple businesses, is a central point where employees can report income, expenses and invoices for each shift and date. The client manages, adds and removes businesses and employees can use the app from a PCs or smartphones.', 
-            link: ''
+            descriptionEs: 'Landing para Alban Tech, soluciones a medida para pequeñas y medianas empresas.',
+            descriptionEn: 'Landing for Alban Tech, customized solutions for small and medium-sized companies.', 
+            link: 'https://albantech.vercel.app/',
+            techs: ['Next.js']
         },
         {
             title: 'Radianer', 
-            image : "/images/project.jpg", 
-            descriptionEs: 'Sitio web de mi proyecto Radianer, un videojuego sandbox 2D con terreno destruible en donde puedes viajar entre múltiples planetas, en este sitio capto leads, y se puede descargar el juego.',
-            descriptionEn: 'Website of my project Radianer, a 2D sandbox game with destructible terrain where you can travel between multiple planets, on this site I get leads, and the game can be downloaded.', 
-            link: ''
+            image : "/images/radianer.jpg", 
+            descriptionEs: 'Demo de mu videojuego sandbox 2D, explora planetas en este mundo de bloques',
+            descriptionEn: 'Demo de mu videojuego sandbox 2D, explora planetas en este mundo de bloques', 
+            link: '#',
+            techs: ['Next.js', 'Unity', 'C#']
         },
-       
     ]
 
   return (
@@ -58,4 +63,5 @@ const projects = ({language}) => {
   )
 }
 
-export default projects 
+export default Projects 
+

@@ -23,7 +23,10 @@ export default function Home() {
     }
 
   return (
-    <main className={st.container} style={styleEffects[styleName]}>
+    <main 
+        className={st.container} 
+        style={styleEffects[styleName]}
+    >
         <Header selectedStyle = {styleName}/>
         <Options styleName={styleName} setStyleName={(stname)=> setStyleName(stname)} setLanguage={(lang)=>setLanguage(lang)}/>
         <Section setEffect={(effectName)=>setEffect(effectName)} language={language}/>
