@@ -10,6 +10,10 @@ import Whatsapp from '@/components/svgIcons/Whatsapp';
 import Linkedin from '@/components/svgIcons/Linkedin';
 
 const Aboutme = ({language}) => {
+
+const openLink = (link) => {
+    window.open(link)
+}
     
     return (
         <motion.div 
@@ -31,13 +35,28 @@ const Aboutme = ({language}) => {
                     <ImageWraper img={'/images/myPic.jpg'}/>
                 </div>
                 <div className={st.repoContainer}>
-                    <motion.button  className={st.iconButton} whileTap={{scale: 0.95,rotate: -5}} whileHover={{rotate: -2}}>
+                    <motion.button  
+                        className={st.iconButton} 
+                        whileTap={{scale: 0.95,rotate: -5}} 
+                        whileHover={{rotate: -2}}
+                        onClick={()=>openLink('https://github.com/AlbanWorks')}
+                    >
                         <Github height={'32px'} width={'32px'} color={'white'}/>
                     </motion.button >
-                    <motion.button  className={st.iconButton} whileTap={{scale: 0.95,rotate: -5}} whileHover={{rotate: -2}}>
+                    <motion.button  
+                        className={st.iconButton} 
+                        whileTap={{scale: 0.95,rotate: -5}} 
+                        whileHover={{rotate: -2}}
+                        onClick={()=>openLink('https://www.linkedin.com/in/santiliz/')}
+                    >
                         <Linkedin height={'30px'} width={'30px'} color={'white'}/>
                     </motion.button >
-                    <motion.button  className={st.iconButton} whileTap={{scale: 0.95,rotate: -5}} whileHover={{rotate: -2}}>
+                    <motion.button  
+                        className={st.iconButton} 
+                        whileTap={{scale: 0.95,rotate: -5}} 
+                        whileHover={{rotate: -2}}
+                        onClick={()=>openLink('https://api.whatsapp.com/send?text=&phone=543814015520')}
+                    >
                         <Whatsapp height={'35px'} width={'35px'} color={'white'}/>
                     </motion.button >
                 </div>

@@ -13,11 +13,6 @@ const Project = ({data, language}) => {
             className={st.anchor} 
             href={data.link}
             whileHover={{scale: 1.02}}
-           
-            whileTap={{
-            rotate: 1,
-            borderRadius: "30px"
-            }}
         >
             <div className={st.imgContainer}>
                 <ImageWraper img={data.image}/>
