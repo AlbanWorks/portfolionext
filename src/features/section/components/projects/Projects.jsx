@@ -23,7 +23,7 @@ const Projects = ({language}) => {
             title: 'Mr Vulpini', 
             image : "/images/vulpini.jpg", 
             descriptionEs: 'Catálogo para Mr Vulpini, permite gestión de productos y venta por redes sociales',
-            descriptionEn: 'Catálogo para Mr Vulpini, permite gestión de productos y venta por redes sociales', 
+            descriptionEn: 'Catalog for Mr Vulpini, allows product management and sales through social networks', 
             link: 'https://mrvulpini-albanworks.vercel.app/',
             techs: ['Next.js','Firebase']
         },
@@ -31,7 +31,7 @@ const Projects = ({language}) => {
             title: 'Kalist', 
             image : "/images/kalist.jpg", 
             descriptionEs: 'Crea listas y notas, mantente productivo y sincronizado con todos tus dispositivos',
-            descriptionEn: 'Crea listas y notas, mantente productivo y sincronizado con todos tus dispositivos', 
+            descriptionEn: 'Create lists and notes, stay productive and in sync with all your devices', 
             link: 'https://kalist.vercel.app',
             techs: ['Next.js','Firebase', 'Framer Motion']
         },
@@ -47,7 +47,7 @@ const Projects = ({language}) => {
             title: 'Radianer', 
             image : "/images/radianer.jpg", 
             descriptionEs: 'Demo de mu videojuego sandbox 2D, explora planetas en este mundo de bloques',
-            descriptionEn: 'Demo de mu videojuego sandbox 2D, explora planetas en este mundo de bloques', 
+            descriptionEn: 'Demo of my 2D sandbox videogame, explore planets in this blocky world', 
             link: '#',
             techs: ['Next.js', 'Unity', 'C#']
         },
