@@ -4,12 +4,13 @@ import st from './Contact.module.css'
 import Whatsapp from '../../../../components/svgIcons/Whatsapp'
 import DefButton from '@/components/defButton/DefButton'
 import { motion } from "framer-motion";
+import Linkedin from '@/components/svgIcons/Linkedin'
+import Github from '@/components/svgIcons/Github'
 
 const Contact = ({language}) => {
 
-    const OpenWhatsapp = () => {
-        const message = encodeURIComponent('Hola Santiago ...')
-        window.location.href = `https://api.whatsapp.com/send?text=${message}&phone=+54${3814015520}`
+    const openLink = (link) => {
+        window.open(link)
     }
 
   return (
@@ -32,14 +33,31 @@ const Contact = ({language}) => {
             </motion.div>
             </form>
         <div className={st.social}>
+        <motion.button 
+                className={st.iconButton} 
+                whileTap={{scale: 0.95,rotate: -3}} 
+                whileHover={{scale: 1.1}}
+                onClick={()=>openLink('https://www.linkedin.com/in/santiliz/')}
+                
+            >
+                <Linkedin height={'100%'} width={'100%'} color={'white'}/>
+            </motion.button>
             <motion.button 
                 className={st.iconButton} 
                 whileTap={{scale: 0.95,rotate: -3}} 
                 whileHover={{scale: 1.1}}
-                onClick={OpenWhatsapp}
+                onClick={()=>openLink('https://api.whatsapp.com/send?text=&phone=543814015520')}
                 
             >
-                <i><Whatsapp height={'100%'} width={'100%'} color={'white'}/></i>
+                <Whatsapp height={'100%'} width={'100%'} color={'white'}/>
+            </motion.button>
+            <motion.button 
+                className={st.iconButton} 
+                whileTap={{scale: 0.95,rotate: -3}} 
+                whileHover={{scale: 1.1}}
+                onClick={()=>openLink('https://github.com/AlbanWorks')}
+            >
+                <Github height={'100%'} width={'100%'} color={'white'}/>
             </motion.button>
         </div>
     </motion.div>

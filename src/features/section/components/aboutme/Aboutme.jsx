@@ -11,9 +11,7 @@ import Linkedin from '@/components/svgIcons/Linkedin';
 
 const Aboutme = ({language}) => {
 
-const openLink = (link) => {
-    window.open(link)
-}
+
     
     return (
         <motion.div 
@@ -32,9 +30,17 @@ const openLink = (link) => {
             </div>
             <div className={st.pictureAndRepoBlock}>
                 <div className={st.imgContainer}>
-                    <ImageWraper img={'/images/myPic.jpg'}/>
+                    <ImageWraper img={'/images/myPic3.png'}/>
                 </div>
-                <div className={st.repoContainer}>
+            </div>
+        </motion.div>
+    )
+}
+
+export default Aboutme
+
+/*
+  <div className={st.repoContainer}>
                     <motion.button  
                         className={st.iconButton} 
                         whileTap={{scale: 0.95,rotate: -5}} 
@@ -60,19 +66,4 @@ const openLink = (link) => {
                         <Whatsapp height={'35px'} width={'35px'} color={'white'}/>
                     </motion.button >
                 </div>
-            </div>
-        </motion.div>
-    )
-}
-
-export default Aboutme
-
-/*
- <p className={st.paragraph}>{language === 'es' ? aboutmeEs : aboutmeEn}</p>
-        <div className={st.paragraph}>
-            <h5>Repo</h5>
-            <motion.button  className={st.iconButton} whileTap={{scale: 0.95,rotate: -5}} whileHover={{rotate: -2}}>
-                <i><Github height={'100%'} width={'100%'} color={'white'}/></i>
-            </motion.button >
-        </div>
 */
