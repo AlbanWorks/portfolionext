@@ -30,7 +30,7 @@ const Aboutme = ({language}) => {
             </div>
             <div className={st.pictureAndRepoBlock}>
                 <div className={st.imgContainer}>
-                    <ImageWraper img={'/images/myPic3.png'}/>
+                    <ImageWraper img={'/images/santiagoround.png'}/>
                 </div>
             </div>
         </motion.div>

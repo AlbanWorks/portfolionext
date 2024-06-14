@@ -28,7 +28,7 @@ const Header = ({selectedStyle}) => {
         </div>
         <div className={st.profileContainer}>
             <div className={st.profilePic}>
-                <ImageWraper img={"/images/cara.jpg"}/>
+                <ImageWraper img={"/images/santiago.jpg"}/>
             </div>
             <h1 className={st.title} >SANTIAGO LIZARDO</h1>
         </div>
